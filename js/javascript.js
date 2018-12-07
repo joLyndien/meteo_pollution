@@ -6,13 +6,13 @@ $( document ).ready(function() {
 
     $.getJSON(url,function(result){
 
-		if (!result || (result.status!="ok")) {
+		if (!result || (result.status!=="ok")) {
 			// "Sorry, something wrong happend: "
 
 			return
 		}
 
-		if (result.data.length==0) {
+		if (result.data.length===0) {
 			//"Sorry, there is no result for your query!"
 			return
 		}
